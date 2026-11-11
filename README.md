@@ -1,14 +1,16 @@
-![Takeover: speech, pointing, and webcam context become an understood instruction and a real rendered edit](docs/assets/takeover-concept.png)
+![Takeover: vibe editing made physical, with voice and framing hands directing the same video moment into a real rendered edit](docs/assets/takeover-concept-v2.png)
 
-# Your next edit is a sentence.
+# Vibe editing. Made physical.
 
-Point at the shoe. **“Zoom in here.”**
+**Your voice. Your gestures. Your edit.**
 
-Watch the result. **“Actually, back off a little.”**
+Lean in. Frame the shoe with your hands. **“Zoom in here.”**
 
-Move to another shot. **“Half speed. A little warmer.”**
+See the crop. Lean back. **“Whoa, that is too close. Back off a little.”**
 
-**Takeover is a video editor you direct with your voice, pointing, and camera gestures.** It connects what you say to what you are looking at, applies the change through Shoty, and puts the rendered result back in front of you.
+Raise a palm. Lower it slowly. **“Half speed.”**
+
+**Takeover turns the way you direct into the way you edit.** Your words, visible gestures, and pointer meet at the moment on screen. The app interprets the instruction, applies it through Shoty, and brings back the rendered result. Watch, react, refine.
 
 [See the demo](#one-ad-seven-directions) · [Under the hood](#what-does-this-shoe-actually-mean) · [Run locally](#run-locally)
 
@@ -16,19 +18,19 @@ Built for [c0mpiled-18 · YC Startup School Hackathon, Taipei](https://luma.com/
 
 ## One ad. Seven directions.
 
-Start with the original 30-second **Nike Air Max 2017** advertisement. Keep the original cut and soundtrack. Direct changes as you watch.
+Start with the original 30-second **Nike Air Max 2017** advertisement. Keep the original cut and soundtrack. Direct it with your face and both hands in view; use the mouse to identify an exact spot.
 
-| You say | Takeover does |
-| --- | --- |
-| “Zoom in on this shoe a little.” | Tightens the product shot around your pointer. |
-| “Actually, back off a little.” | Refines that crop, keeping the subject. |
-| “Slow this shot down to half speed.” | Slows the water shoe shot and shifts later shots. |
-| “Make this shot a little warmer.” | Grades that shot. The rest keeps its look. |
-| “Add the caption FEEL THE AIR at the bottom of this shot.” | Renders your headline into the video. |
-| “Make the caption bigger and move it up a little.” | Revises the existing caption without duplicating it. |
-| “Undo that last change.” | Restores the previous caption size and position. |
+| You say | You show | The edit |
+| --- | --- | --- |
+| “Okay, zoom in on this shoe a little.” | Lean in and frame it with both hands. | Tighten the product shot around the pointed shoe. |
+| “Whoa, that is too close. Back off a little.” | Lean back and bring your hands inward. | Reduce the previous zoom. |
+| “Hold on. Slow this shot down to half speed.” | Raise an open palm, then lower it slowly. | Slow the water shoe shot to 0.5×. |
+| “This feels a little cold. Make it warmer.” | Turn your hand as if adjusting a dial. | Warm that shot's color. |
+| “Add FEEL THE AIR as a caption down here.” | Point below the shoe on screen and in the camera. | Place the headline beneath the product. |
+| “Make the caption bigger, and move it up a little.” | Spread your hands, then lift one palm. | Revise the same caption's size and position. |
+| “Actually, undo that last change.” | Give a small backward wave while saying undo. | Restore the previous caption style. |
 
-Each accepted direction becomes a real edit in Shoty and a new native video export. Wait for **Applied**, watch it, and keep directing.
+The spoken instruction specifies the change; your visible performance reinforces it. Each accepted direction becomes a real edit in Shoty and a new native video export. Wait for **Applied**, watch it, and keep directing. Finish by replaying the edited ad.
 
 **90-second video:** the YouTube walkthrough will be linked here after upload.
 
@@ -202,4 +204,4 @@ This is a local prototype with configured shot regions and serialized rendering.
 - Current demo: **Nike Air Max 2017 — Go Lighter, Go Longer**, Nike Europe / ManvsMachine / Zelig Sound, via the [D&AD archive](https://www.dandad.org/work/d-ad-awards-archive/nike-air-max-2017). Original footage and soundtrack are used for an independent editing demonstration; Takeover is not affiliated with Nike.
 - Earlier rehearsal: [Ketut Subiyanto](https://www.pexels.com/video/a-woman-tying-her-shoes-4922551/) and [KoolShooters](https://www.pexels.com/video/close-up-of-a-person-running-8520623/) / Pexels.
 - Typography: Geist, with its [font license](public/fonts/OFL.txt).
-- Concept illustration: generated with ImageGen; [generation prompt](docs/assets/takeover-concept-prompt.txt).
+- Concept illustration: generated with ImageGen; [generation prompt](docs/assets/takeover-concept-v2-prompt.txt).
