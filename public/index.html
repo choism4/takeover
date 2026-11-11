@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Takeover</title><link rel="stylesheet" href="/style.css"></head>
+<body>
+<header><a class="brand" href="/" aria-label="Takeover home"><svg viewBox="146 215 1892 345" width="148" height="27" aria-hidden="true" focusable="false"><image href="/brand/takeover-overline.png" width="2172" height="724"/></svg></a></header>
+<main>
+
+  <div id="notice" role="status" aria-live="polite" hidden></div>
+  <section class="workspace" aria-label="Directing workspace">
+    <div class="edit-deck">
+      <div class="panel-head"><span>Video</span></div>
+      <div id="stage" class="stage" tabindex="0" aria-label="Video monitor. Point to a subject, click to hold, Space to play.">
+        <video id="source" src="/media/source.mp4" preload="auto" playsinline></video><video id="result" preload="auto" playsinline hidden></video>
+        <canvas id="strokes" aria-hidden="true"></canvas><div id="reticle" hidden><span></span></div>
+        <button id="big-play" aria-label="Play video">▶</button>
+      </div>
+      <div class="transport"><button id="play" aria-label="Play or pause">▶</button><span id="play-time" class="mono">00:00.80</span><input id="scrub" type="range" min="0" max="29.96" step="0.01" value="0.8" aria-label="Source playhead"><span class="mono muted">00:30.00</span></div>
+      <div class="edit-status" hidden><span id="status-dot" class="status-dot"></span><div><strong id="status"></strong><span id="detail"></span></div></div>
+
+    </div>
+    <aside class="director-deck">
+      <div class="panel-head"><span>Director's cam</span><span id="cam-state" class="pill">Off</span></div>
+      <div class="webcam"><button id="stop-camera" aria-label="Turn camera off" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="5" width="14" height="14" rx="2"/></svg></button><video id="camera" autoplay muted playsinline hidden></video><div id="cam-empty"><span class="camera-icon">◎</span><strong>Camera is off</strong><p>Enable it to include gestures.</p><button id="enable-cam" class="secondary">Enable camera &amp; mic</button></div><div id="cam-live" hidden><i></i> LIVE INPUT <span id="session-clock">00:00</span></div></div>
+
+      <section class="directions" aria-label="Directions">
+        <div class="panel-head transcript-head"><span>Directions <small id="cue-count">0</small></span><div class="session-actions"><span id="record-clock" hidden>● 00:00</span><button id="start" class="primary"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 4 8 9H4v6h4l12 5V4ZM8 15l2 6h4l-2-4M8 9v6"/></svg><span>Start directing</span></button></div></div>
+        <div id="log" class="log" aria-live="polite"></div>
+        <p id="interim" aria-live="polite"></p>
+
+        <span id="queue-count"></span>
+      </section>
+    </aside>
+  </section>
+
+
+</main><canvas id="composite" width="1280" height="720" hidden></canvas><script type="module" src="/app.mjs"></script>
+</body></html>

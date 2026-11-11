@@ -1,0 +1,3 @@
+import Anthropic from '@anthropic-ai/sdk';
+const client=new Anthropic({apiKey:process.env.CLAUDE_DZ_DEV_API_KEY,maxRetries:0,timeout:30000});
+try{const response=await client.messages.create({model:'claude-opus-4-8',max_tokens:64,messages:[{role:'user',content:'Reply with the single word CONNECTED.'}]});console.log(JSON.stringify({ok:response.stop_reason==='end_turn',model:response.model,text:response.content.filter(b=>b.type==='text').map(b=>b.text).join('')}));}catch(e){console.error(JSON.stringify({ok:false,status:e.status,type:e.constructor.name,message:e.error?.error?.message??e.message}));process.exitCode=1;}

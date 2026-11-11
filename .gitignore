@@ -1,0 +1,17 @@
+node_modules/
+.runtime/
+media/*.mp4
+media/*.webm
+media/*.wav
+media/*.mp3
+media/*.aiff
+media/*.jpg
+media/*.json
+.DS_Store
+.env*
+.daeri-vault.toml
+public/vendor/
+
+media/*.mov
+media/*.zip
+media/*.y4m

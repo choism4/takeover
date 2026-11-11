@@ -1,0 +1,157 @@
+{
+  "title": "Direct the original Nike Air Max 2017 ad",
+  "source": "The complete original 30-second Nike Europe / ManvsMachine / Zelig Sound advertisement from the D&AD archive.",
+  "opening": "I am going to direct this Nike ad by talking to it and pointing at the screen.",
+  "openingNote": "Say this to the audience BEFORE clicking Start directing. The recognizer should hear editing instructions only.",
+  "rehearsal": "Click Cue moment to pause on the exact original frame. Look at the main video, point with the mouse, then speak one line. Wait for Applied before continuing. Cue controls only move the playhead.",
+  "steps": [
+    {
+      "id": "frame",
+      "title": "Frame the product",
+      "sourceTime": 24.68,
+      "direction": "Zoom in on this shoe a little.",
+      "where": "The grey Nike Air Max shoe on the blue background, near the end of the ad.",
+      "gesture": "Move the cursor onto the upper of the shoe, just above the air sole. Click once to hold the frame. Keep the cursor there while speaking.",
+      "pointer": {
+        "x": 0.51,
+        "y": 0.52
+      },
+      "expected": "Only the product reveal becomes a tighter crop centered on your pointer.",
+      "check": "After Applied, press Space for a brief preview, then pause again.",
+      "edits": [
+        {
+          "action": "zoom",
+          "shotId": "hero",
+          "value": 1.2,
+          "target": {
+            "x": 0.51,
+            "y": 0.52
+          }
+        }
+      ]
+    },
+    {
+      "id": "refine",
+      "title": "Give a follow-up",
+      "sourceTime": 24.68,
+      "direction": "Actually, back off a little.",
+      "where": "Stay on the same grey product shoe.",
+      "gesture": "Keep looking at the product. You do not need to repeat the target.",
+      "expected": "The previous zoom becomes less tight. Other sections stay unchanged.",
+      "check": "Wait for Applied. The crop should sit between the original and the first zoom.",
+      "edits": [
+        {
+          "action": "zoom",
+          "shotId": "hero",
+          "value": 1.1,
+          "target": {
+            "x": 0.51,
+            "y": 0.52
+          }
+        }
+      ]
+    },
+    {
+      "id": "pace",
+      "title": "Slow the water shot",
+      "sourceTime": 5.56,
+      "direction": "Slow this shot down to half speed.",
+      "where": "The pale blue shoe made from moving water, immediately after the pink foam shoe.",
+      "gesture": "Click Cue moment. Keep this water shot paused while speaking; do not scrub during the sentence.",
+      "expected": "Only source 5.32 to 6.00 plays at 0.5x. Later shots move later in the output.",
+      "check": "Wait for Applied, then press Space to see the water move more slowly.",
+      "edits": [
+        {
+          "action": "speed",
+          "shotId": "water",
+          "value": 0.5
+        }
+      ]
+    },
+    {
+      "id": "look",
+      "title": "Adjust the water shot",
+      "sourceTime": 5.56,
+      "direction": "Make this shot a little warmer.",
+      "where": "The same water shoe, against the blue background.",
+      "gesture": "Pause on the water shoe again. Keep your gaze on the video.",
+      "expected": "A subtle warmer grade is applied to the water shot only.",
+      "check": "Wait for Applied. The original pink montage and product reveal keep their colors.",
+      "edits": [
+        {
+          "action": "temperature",
+          "shotId": "water",
+          "value": 400
+        }
+      ]
+    },
+    {
+      "id": "caption",
+      "title": "Add the headline",
+      "sourceTime": 24.68,
+      "direction": "Add the caption FEEL THE AIR at the bottom of this shot.",
+      "where": "Return to the grey Nike product shoe at source 24.68 seconds.",
+      "gesture": "Point to the empty blue space beneath the shoe. Say FEEL THE AIR clearly, with a small pause before those words.",
+      "expected": "FEEL THE AIR appears below the product during source 23.80 to 25.32. Original end-card text stays in the original video.",
+      "check": "Wait for Applied. Look for a single caption below the shoe.",
+      "edits": [
+        {
+          "action": "caption",
+          "text": "FEEL THE AIR",
+          "start": 23.8,
+          "end": 25.32,
+          "fontSize": 44,
+          "x": 50,
+          "y": 85
+        }
+      ]
+    },
+    {
+      "id": "style",
+      "title": "Refine the caption",
+      "sourceTime": 24.68,
+      "direction": "Make the caption bigger and move it up a little.",
+      "where": "The new FEEL THE AIR caption beneath the product shoe.",
+      "gesture": "Keep this frame paused. Point at the caption. A small upward hand motion can reinforce the spoken instruction.",
+      "expected": "The same caption grows and moves upward slightly, without duplicating it or covering the shoe.",
+      "check": "Wait for Applied. Confirm the wording is unchanged and the shoe is readable.",
+      "edits": [
+        {
+          "action": "caption",
+          "captionId": "$lastCaption",
+          "text": "FEEL THE AIR",
+          "start": 23.8,
+          "end": 25.32,
+          "fontSize": 56,
+          "x": 50,
+          "y": 78
+        }
+      ]
+    },
+    {
+      "id": "undo",
+      "title": "Undo one decision",
+      "sourceTime": 24.68,
+      "direction": "Undo that last change.",
+      "where": "Stay on the captioned product frame.",
+      "gesture": "No pointing is required.",
+      "expected": "The caption returns to its previous size and position. Caption text, product zoom and slowed water remain.",
+      "check": "Wait for Undone.",
+      "operation": "undo"
+    },
+    {
+      "id": "replay",
+      "title": "Watch the result",
+      "sourceTime": 0,
+      "direction": "Play it from the beginning.",
+      "where": "Stay in the edited view.",
+      "gesture": "Keep your hands still while the complete edit plays.",
+      "expected": "The edited original Nike ad plays from the beginning.",
+      "check": "Watch through the Nike and JD end cards, then click Stop directing.",
+      "operation": "replay"
+    }
+  ],
+  "finish": "After Stop directing, say: Every change you just saw was applied to the original video through Shoty.",
+  "timing": "Expect several seconds of interpretation and rendering per edit. Speak the next line only after Applied or Undone. A recorded demo may speed up waiting with a visible speed-up label.",
+  "generationExtension": "This rehearsal edits the original Nike advertisement. Stock footage and generated replacement advertisements are outside this demo."
+}
