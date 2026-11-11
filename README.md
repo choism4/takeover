@@ -1,4 +1,4 @@
-![Takeover: vibe editing made physical, with voice and framing hands directing the same video moment into a real rendered edit](docs/assets/takeover-concept-v2.png)
+![Takeover: live webcam gestures and mouse-drawn annotations become precise crop and caption edits](docs/assets/takeover-concept-v3.png)
 
 # Vibe editing. Made physical.
 
@@ -204,4 +204,4 @@ This is a local prototype with configured shot regions and serialized rendering.
 - Current demo: **Nike Air Max 2017 — Go Lighter, Go Longer**, Nike Europe / ManvsMachine / Zelig Sound, via the [D&AD archive](https://www.dandad.org/work/d-ad-awards-archive/nike-air-max-2017). Original footage and soundtrack are used for an independent editing demonstration; Takeover is not affiliated with Nike.
 - Earlier rehearsal: [Ketut Subiyanto](https://www.pexels.com/video/a-woman-tying-her-shoes-4922551/) and [KoolShooters](https://www.pexels.com/video/close-up-of-a-person-running-8520623/) / Pexels.
 - Typography: Geist, with its [font license](public/fonts/OFL.txt).
-- Concept illustration: generated with ImageGen; [generation prompt](docs/assets/takeover-concept-v2-prompt.txt).
+- Concept illustration: generated with ImageGen; [generation prompt](docs/assets/takeover-concept-v3-prompt.txt).
